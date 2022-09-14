@@ -75,7 +75,7 @@ app.get('/v2', async (req, res) => {
         ? og.description
         : meta.description
         ? meta.description
-        : null;
+        : '';
       const title = (og.title ? og.title : meta.title) || '';
       const siteName = og.site_name || '';
 
